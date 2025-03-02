@@ -1,0 +1,7 @@
+{
+    "rules": {
+      "no-console": "off",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  }
+  

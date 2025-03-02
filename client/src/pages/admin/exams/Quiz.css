@@ -1,0 +1,97 @@
+.quiz-options {
+    list-style-type: lower-alpha;
+}
+
+.quiz-options input[type="radio"] {
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    background-color: #f2f2f2;
+    border: 1px solid #000; /* Black border */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.quiz-options input[type="radio"]:checked {
+    background-color: #fff;
+    border: 1px solid #000; /* Black border */
+}
+
+.quiz-options input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    background-color: #73d48a; /* Green color */
+}
+
+.quiz-options .quiz-radio.correct:checked::after {
+    background-color: hsl(134, 32%, 58%); /* Green color for correct answer */
+}
+
+.quiz-options .quiz-radio.incorrect:checked::after {
+    background-color: #663338; /* Red color for incorrect answer */
+}
+.feedback-message {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .correct-answer {
+    color: green;
+  }
+  .incorrect-answer {
+    color: red;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: gainsboro;
+    font-family: cursive !important;
+    font-size: small !important;
+}
+.quiz-container button {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;  /* Ensures it is displayed */
+}
+
+.quiz-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.quiz-report {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+.quiz-container {
+    max-height: 50vh;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px; /* Adds space for scrolling */
+    overflow-y: auto;
+    font-family: cursive !important;
+    font-size: small !important;
+    background-color: #f9f9f9;
+}
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
